@@ -12,10 +12,10 @@ def list_sel():
 
 
 def list_del():
- #调用删除方法,填写参数:索引值 就可以删除指定元素
+    #调用删除方法,填写参数:索引值 就可以删除指定元素
     alist.pop(3)
     print(alist)
-#  调用删除方法,不填参数,默认删除最后一位
+    #  调用删除方法,不填参数,默认删除最后一位
     alist.pop()
     print(alist)
 
@@ -52,13 +52,52 @@ def list_order_by():
     dlist.sort(reverse=True)
     print(dlist)
 
+# 去重: 自动排序(正序)
+def list_distinct():
+    vlist = [7,1,2,3,4,4,3,7,1]
+    # set 方法对list进行去重,去重后不是list类型
+    vlist = set(vlist)
+    print(vlist)
+# 用list()方法,将这个数据转换成类型
+    vlist = list(set(vlist))
+    print(vlist)
+# len():获取列表的长度,有几个元素就返回几
+    print(len(vlist))
+
+
+# 作业
+def list_():
+    alist = [1,5,6,4,3]
+    # 访问索引2
+    print(alist[2])
+    # 切片访问索引1到4
+    print(alist[1:4])
+    # 删除索引3
+    alist.pop(3)
+    print(alist)
+   # 增加两个元素
+    blist = [8,9]
+    alist.extend(blist)
+    print(alist)
+    #第0位元素改为字符5
+    alist[0] = '5'
+    print(alist)
+    #  获取索引长度
+    print(len(alist))
+
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
     # list_sel()
     # list_del()
-    # list_add()
+    #  list_add()
     # list_updata()
-    list_order_by()
-
-
+    # list_order_by()
+    # list_distinct()
+    list_()
