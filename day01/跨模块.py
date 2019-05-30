@@ -36,7 +36,7 @@ if __name__ == '__main__':
 a = '我是中国人'
 print(a[0:3])
 print(a[4])
-print(a[0:6]
+print(a[0:6])
       # 反转
 print(a[::-3])
 
