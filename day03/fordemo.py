@@ -61,12 +61,20 @@ def break_continue():
 
 
 
+def for_li():
+    for i in range(1,10):
+        x = i + 1
+        for j in range(1,x):
+            print('%s * %s = %s'%( i , j ,i * j),end ='   ' )
+        print(' ')
 
 
 
+def xunhuan():
 
 
-
+    for i in range(5):
+        print(i)
 
 
 
@@ -78,7 +86,9 @@ def break_continue():
 if __name__ == '__main__':
     # for_demo1()
     # for_list()
-    break_continue()
+    # break_continue()
+    # for_li()
+    xunhuan()
 
 
 
